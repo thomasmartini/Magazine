@@ -41,7 +41,13 @@ function init() {
     document.getElementById('favorietBruschetta').addEventListener('click', favorietBruschetta);
     document.getElementById('favorietShoarma').addEventListener('click', favorietShoarma);
 
-
+    recept.innerHTML = "<h1>Pasta Pesto</h1><h3>Ingrediënten:<br> 500g kippenblokjes, 1 grote ui, groene pesto, fusili, 250g cherry tomaatjes<br>Optioneel: pijnboompittjes, rucola en geraspte kaas</h3><h3>Recept:</h3>" +
+    "Als eerste snipper het uitje en fruit even aan in een scheutje olijfolie. Voeg hierna de blokjes " +
+       "kip toe en bak ze totdat ze gaar zijn. Kook ondertussen de pasta gaar(Doe een blokje kip bouillon in het water inplaats van zout voor extra smaak). Voeg de pesto toe aan de kip " +
+       "en roer goed door. Proef nog even of er nog peper of zout bij moet. <br>" +
+       "Laat de pestosaus een paar minuutjes zachtjes pruttelen. Voeg dan de " +
+       "gekookte pasta toe en schep er doorheen. Halveer de tomaatjes en roer ook door de pasta pesto en verwarm nog een minuutje mee. " +
+       "Serveer de pasta pesto op een bord met een handje rucola, geroosterde pijnboompitten en wat geraspte kaas.";
 }
 function favorieten(gerecht, button) {
     let favoriet = localStorage.getItem(gerecht);
@@ -87,12 +93,13 @@ function favorietShoarma(){
     function pesto(e) {
         e.preventDefault();
         let recept = document.getElementById('recept')
-        recept.innerHTML = "<h1>Pasta Pesto</h1>Snipper het uitje en fruit even aan in een scheutje olijfolie. Voeg de blokjes" +
-            "kip toe en bak ongeveer 5 minuten. Kook ondertussen de pasta gaar. Voeg de (zelfgemaakte) pesto en room toe aan de kip" +
-            "en roer goed door. Proef nog even of er nog peper of zout bij moet.<br>" +
-            "Laat de pestosaus een paar minuutjes zachtjes pruttelen. Voeg dan de" +
-            "gekookte pasta toe en schep er doorheen. Halveer de tomaatjes en roer ook door de pasta pesto en verwarm nog een minuutje mee." +
-            "Serveer de pasta pesto in de pan of op een bord met een handje rucola en de geroosterde pijnboompitten.";
+        recept.innerHTML = "<h1>Pasta Pesto</h1><h3>Ingrediënten:<br> 500g kippenblokjes, 1 grote ui, groene pesto, fusili, 250g cherry tomaatjes<br>Optioneel: pijnboompittjes, rucola en geraspte kaas</h3>" +
+    "Snipper het uitje en fruit het even in een scheutje olijfolie. Voeg de blokjes " +
+       "kip toe en bak ze totdat ze gaar zijn. Kook ondertussen de pasta gaar(Doe een blokje kip bouillon in het water inplaats van zout voor extra smaak). Voeg de pesto toe aan de kip " +
+       "en roer goed door. Proef nog even of er nog peper of zout bij moet. <br>" +
+       "Laat de pestosaus een paar minuutjes zachtjes pruttelen. Voeg dan de " +
+       "gekookte pasta toe en schep er doorheen. Halveer de tomaatjes en roer ook door de pasta pesto en verwarm nog een minuutje mee. " +
+       "Serveer de pasta pesto op een bord met een handje rucola, geroosterde pijnboompitten en wat geraspte kaas.";
 
     }
 
@@ -100,15 +107,11 @@ function favorietShoarma(){
     function tikka(e) {
         e.preventDefault();
         let recept = document.getElementById('recept')
-        recept.innerHTML = "<h1>Tikka Masalla</h1> Meng de yoghurt, 5 teentjes uitgeperste knoflook, 4 cm geraspte gember, 2 tl garam masala, 1 tl komijnpoeder, 1 tl kurkumapoeder en 1 tl zout door elkaar in een grote kom." +
-            " Roer de blokjes kippendij er goed door en laat minimaal 10 minuten afgedekt marineren in de koelkast." +
-            "Blancheer de roosjes broccoli 5 minuten in kokend water en giet daarna af." +
-            "Verhit een grote hapjes- of braadpan met een flinke scheut zonnebloemolie. Schep de kip uit de marinade en bak de blokjes op hoog vuur rondom bruin. Schep daarna uit de pan." +
-            "Smelt de boter in dezelfde pan en fruit de uien met een snuf zout op middelhoog vuur. Voeg daarna de 2 teentjes uitgeperste knoflook en 2 cm geraspte gember toe en bak 1 minuut mee." +
-            " Daarna komt de 1 tl garam masala, ½ tl komijnpoeder, 1 tl kurkumapoeder en tomatenpuree erbij. Roer goed door en bak nog 1 minuut. Schenk de passata, slagroom en melk in de pan en roer de gebakken " +
-            "kip en geblancheerde broccoli erdoor. Zit er nog marinade in je kom? Roer dit er dan ook door. Laat 15 minuten pruttelen en roer af en toe door." +
-            "Proef de saus en breng naar wens op smaak met citroensap, zout, zwarte peper en eventueel chili." +
-            "Serveer de kip tikka masala met koriander en witte rijst."
+        recept.innerHTML = "<h1>(soort van) Tikka Masalla</h1><h3>Ingrediënten:<br> 500g kippenblokjes, 1 grote ui, ajam paniki, rode curry, 400g sperziebonen, 1 groot blik kokos melk(400ml) en basmati rijst<br></h3><h3>Recept:</h3>" +
+        "Zet als eerste een pan water op voor de rijst en als je meerdere pannen hebt kan je er ook meteen een voor de sperziebonen aanzetten. Gooi de rijst in de pan als het begint met koken" +
+        ". Snipper het uitje en fruit het even in een scheutje olijfolie. Voeg de blokjes "  + 
+        " kip toe en bak ze totdat ze gaar zijn. Terwijl dit bezig is halveer je de boontjes en kook je ze gaar. Voeg de ajam paniki, rode curry en kokos melk toe aan de kip en roer goed totdat alles vermengd is. Voeg hierna de sperziebonen toe en laat het nog een paar minuten prutellen. <br>" + 
+        "server de rijst met de saus" 
 
     }
 
@@ -121,11 +124,6 @@ function favorietShoarma(){
         if (localStorage.getItem(gerecht) == 'Voeg toe aan favorieten') {
             document.getElementById(button).style.background = '#0069ed'
 
-
-
-
     }
-
-
 
 }
